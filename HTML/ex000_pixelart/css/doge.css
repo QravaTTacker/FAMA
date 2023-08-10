@@ -1,0 +1,57 @@
+.doge{
+    background-color: #f1a20f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.th-doge{
+    background-color: #f1a20f;
+    width: 26px;
+    height: 26px;
+    padding: 0px;
+}
+
+.preto{
+    background-color: #232323;
+    width: 26px;
+    height: 26px;
+}
+
+.orela{
+    background-color: #fec689;
+    width: 26px;
+    height: 26px;
+}
+
+.pele{
+    background-color: #fe9c3a;
+    width: 26px;
+    height: 26px;
+}
+
+.boca{
+    background-color: #fec689;
+    width: 26px;
+    height: 26px;
+}
+
+.sombra-pele{
+    background-color: #be762b;
+    width: 26px;
+    height: 26px;
+}
+
+.sombra-boca{
+    background-color: #c2bcaa;
+    width: 26px;
+    height: 26px;
+}
+
+.branco{
+    background-color: #ffffff;
+    width: 26px;
+    height: 26px;
+}

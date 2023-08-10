@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Test</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        .obj {
+            width: 100px;
+            height: 100px;
+            background-color: RED;
+            border-radius: 100px;
+            position: relative;
+            animation: mover 2s infinite;
+        }
+
+        @keyframes mover {
+            0% {
+                top: 0;
+                left: 0vw;
+            }
+
+            33% {
+                top: 0vh;
+                left: 10vw;
+            }
+
+            66% {
+                top: 25vh;
+                left: 0vw;
+            }
+
+            99% {
+                top: 0vh;
+                left: 0vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="obj"></div>
+</body>
+
+</html>

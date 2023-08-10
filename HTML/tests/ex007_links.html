@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background: #4a214a;
+            margin: 0;
+        }
+        div{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-top: 20px;
+        }
+        ul{
+            /* Elimina a fonte entre as tags da lista. Por padrão, cada uma tem um caractere de espaçamento */
+            font-size: 0;
+            /* Elimina o espaçamento entre as tags da lista */
+            /* display: inline-block; */
+            /* Coloca um espaçamento entre o topo da lista com o body da página */
+            padding-top: 20px;
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-bottom: 20px;
+            
+            text-align: center;
+            background-image: linear-gradient(to right, #2c0a2c, #4a164a, #2c0a2c);
+            border-radius: 20px;
+            width: 800px;
+        }
+        li{
+            /* Elimina os pontos de cada tópico (li) */
+            list-style: none;
+            /* Coloca todos os tópicos em uma mesma linha, ele automaticamente já elimina os pontos de cada tópico */
+            display: inline-block;
+            /* 
+             * inline-block mantém a integridade de cada tópico que possui mais de duas palavras. 
+             * Ele impedindo que o título (de tópico) se "quebre" quando a página sofre modificações de tamanho
+             *
+             */
+        }
+        a{
+            /* Cor da fonte do link */
+            color: white;
+            /* Cor de fundo do link */
+            background: #532f50;
+            /* Curvatura das bordas no link */
+            border-radius: 20px 10px;
+            /* Espaçamentos do conteúdo central (de cada link) em relação às bordas de seu contêiner */
+            padding: 5px;
+            /* Tamanho da fonte */
+            font-size: 20px;
+        }
+        /* Define o comportamento do link ao passar o mouse em cima */
+        a:hover{
+            background: #602f2f;
+            color: rgb(255, 127, 168);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cria uma divisão para centralizar o conteúdo -->
+    <div>
+        <!-- Cria uma lista -->
+        <ul>
+            <!-- Cria os tópicos de uma lista -->
+            <li><a href="#" title="Entrada no site">Home</a></li>
+            <li><a href="#" title="Área de tutorial CSS">CSS Tutorial</a></li>
+            <li><a href="#" title="Construção de menus">CSS Menu</a></li>
+            <li><a href="#" title="Fale conosco">Contato</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{margin: 0%;}
+table{border-collapse: collapse;}
+
+th{
+    border: 1px solid #000000;
+    background-color: #f1a20f;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+}
+
+.doge{
+    background-color: #f1a20f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.preto{background-color: #232323;}
+.orela{background-color: #fec689;}
+.pele{background-color: #fe9c3a;}
+.boca{background-color: #fec689;}
+.sombra-pele{background-color: #be762b;}
+.sombra-boca{background-color: #c2bcaa;}
+.branco{background-color: #ffffff}

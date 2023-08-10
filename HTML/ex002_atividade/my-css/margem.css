@@ -1,0 +1,205 @@
+@media screen and (max-width: 1200px) {
+  .sys-io {
+    padding: 10px;
+    width: 35%;
+  }
+  .type {
+    padding: 10px;
+    width: 35%;
+  }
+  .largo {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .div-header {
+    flex-direction: column;
+  }
+  .title-header {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .nav-bar {
+    margin: 10px 0px 5px 0px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .exemplos {
+    padding: 10px 10px 10px 50px;
+    width: 50%;
+  }
+  .main {
+    padding: 10px;
+    width: 35%;
+  }
+  .type {
+    padding: 10px;
+    width: 45%;
+  }
+  .sys-io {
+    padding: 10px;
+    width: 40%;
+  }
+  .largo {
+    padding: 10px 10px 10px 30px;
+    width: 55%;
+  }
+  .for-centro {
+    padding: 10px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav-bar {
+    margin: 10px 0px 5px 0px;
+    width: 80%;
+  }
+  .exemplos {
+    padding: 10px 10px 10px 50px;
+    width: 50%;
+  }
+  .main {
+    width: 35%;
+    padding: 10px;
+  }
+  .type {
+    padding: 10px;
+    width: 45%;
+  }
+  .sys-io {
+    padding: 10px;
+    width: 40%;
+  }
+  .largo {
+    padding: 10px 10px 10px 30px;
+    width: 55%;
+  }
+  .for-centro {
+    padding: 10px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .exemplos {
+    padding: 10px 10px 10px 30px;
+    width: 60%;
+  }
+  .main {
+    padding: 10px;
+    width: 35%;
+  }
+  .type {
+    padding: 10px;
+    width: 55%;
+  }
+  .sys-io {
+    padding: 10px;
+    width: 50%;
+  }
+  .largo {
+    padding: 10px 10px 10px 30px;
+    width: 75%;
+  }
+  .for-centro {
+    padding: 10px;
+    width: 70%;
+  }
+  .table {
+    font-size: 15px;
+    width: 95%;
+  }
+  .table tr,
+  .table th,
+  .table td {
+    height: 8px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav-bar {
+    margin: 10px 0px 5px 0px;
+    width: 90%;
+  }
+  .link-github,
+  .link-instagram,
+  .link-linkedin,
+  .link-lattes {
+    padding: 0px 10px 0px 10px;
+  }
+  .exemplos {
+    padding: 10px 10px 10px 30px;
+    width: 70%;
+  }
+  .main {
+    padding: 10px;
+    width: 35%;
+  }
+  .type {
+    padding: 10px;
+    width: 55%;
+  }
+  .sys-io {
+    padding: 10px;
+    width: 50%;
+  }
+  .largo {
+    padding: 10px 10px 10px 30px;
+    width: 75%;
+  }
+  .table {
+    font-size: 15px;
+    width: 95%;
+  }
+  .for-centro {
+    padding: 10px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .largo {
+    padding: 10px 10px 10px 30px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .for-centro {
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .link-github,
+  .link-instagram,
+  .link-linkedin,
+  .link-lattes {
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+  }
+  .type {
+    padding: 10px;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .table {
+    font-size: 13px;
+    width: 95%;
+  }
+  .table tr,
+  .table th,
+  .table td {
+    height: 8px;
+  }
+}

@@ -1,0 +1,27 @@
+body{margin: 0%;}
+table{border-collapse: collapse;}
+
+th{
+    /* border: 1px solid #000000; */
+    background-color: #f1660f;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+}
+
+.pizza{
+    background-color: #f1660f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda{background-color: #2c2a2c; opacity: 80%;}
+.massa{background-color: #ffd700;}
+.borda-massa1{background-color: #8b4412;}
+.borda-massa2{background-color: #cd853e;}
+.calabresa{background-color: #ff0000;}
+.borda-calabresa{background-color: #700024;}
+.recheio{background-color: #ff9124;}

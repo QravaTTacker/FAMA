@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="at01_PixelArt\img\me-da-10.png" type="image/x-icon">
+    <title>Circulo RBG</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: black;
+            animation: RGB 1s infinite;
+        }
+
+        @keyframes RGB {
+            0% {
+                background-color: orange;
+            }
+
+            25% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            75% {
+                background-color: yellow;
+            }
+
+            100% {
+                background-color: orange;
+            }
+        }
+
+        .bola {
+            width: 50%;
+            height: 300px;
+            border-radius: 50%;
+            background-image: black;
+            position: relative;
+            animation: mover 1s infinite;
+        }
+
+        @keyframes mover {
+            0% {
+                left: 0;
+                top: 0;
+                background-image: linear-gradient(orange, rgb(237, 228, 156));
+                border-radius: 0% 100% 0% 100%;
+                border: 3px solid black;
+            }
+
+            25% {
+                left: calc(100vw - 52vw);
+                top: 0;
+                background-image: linear-gradient(green, rgb(131, 225, 131));
+                border-radius: 100% 0% 100% 0%;
+                border: 3px solid black;
+            }
+
+            50% {
+                left: calc(100vw - 52vw);
+                top: calc(100vh - 52vh);
+                background-image: linear-gradient(blue, rgb(164, 164, 249));
+                border-radius: 0% 100% 0% 100%;
+                border: 3px solid black;
+            }
+
+            75% {
+                left: 0;
+                top: calc(100vh - 52vh);
+                background-image: linear-gradient(yellow, rgb(231, 229, 206));
+                border-radius: 100% 0% 100% 0%;
+                border: 3px solid black;
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+                background-image: linear-gradient(orange, rgb(237, 228, 156));
+                border-radius: 0% 100% 0% 100%;
+                border: 3px solid black;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bola"></div>
+</body>
+
+</html>

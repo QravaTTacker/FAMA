@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table I</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário 📰</title>
+    <link rel="icon" href="icon/geo.ico">
+</head>
+<body>
+    <!-- A parte lógica da Web se resume em requisições. Tipos de requisição:
+        Get (ver) -> Quando eu quero um recuso do servidor
+        Post (criar) -> Quando eu quero que o servidor processe um recurso
+        put/patch (atualizar)
+        delete (excluir)
+    -->
+    <form action="" method="post"> <!-- Cria um formulário -->
+    <!-- O parâmetro 'action' indica onde será enviado o conteúdo do formulário -->
+    <!-- O parâmetro 'method' indica qual será o método de requisição, por padrão, é get -->
+        <table>
+            <tr> <!-- tr cria uma linha -->
+                <td> <!-- td cria uma célula -->
+                    <label for="nome"> Nome </label>
+                </td>
+                <td>
+                    <input type="text" name="nome" id="nome">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="data"> Data </label>
+                </td>
+                <td>
+                    <input type="date" name="data" id="data">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="num"> Número </label>
+                </td>
+                <td>
+                    <input type="number" name="num" id="num">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="pass"> Senha </label>
+                </td>
+                <td>
+                    <input type="password" name="pass" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="arq"> Arquivo </label>
+                </td>
+                <td>
+                    <input type="file" name="arq" id="arq">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

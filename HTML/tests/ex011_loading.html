@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristian Pessotto" />
+    <meta name="description" content="Criação de um loader" />
+    <meta name="keywords" content="HTML,  CSS,  JS" />
+    <title>loading</title>
+    <style>
+      body {
+        align-items: center;
+        background-color: #2f4f4f;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        min-height: 100vh;
+      }
+      .loader {
+        animation: loading 1s linear infinite;
+        border: 25px solid #e5e5e5;
+        border-radius: 50%;
+        border-bottom-color: #85c75a;
+        border-top-color: rgb(152, 242, 93);
+        box-shadow: 0px 5px 80px #8ece85;
+        height: 150px;
+        width: 150px;
+      }
+      @keyframes loading {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

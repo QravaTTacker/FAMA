@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>My C Language</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristian Pessotto" />
+    <meta name="keywords" content="HTML, CSS, Bootstrap" />
+    <meta name="description" content="Avaliação de Desenvolvimento Web" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="my-css/style.css" rel="stylesheet" />
+    <link href="my-css/margem.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="icons/c-logo.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!--! Cabeçalho do Site -->
+    <header class="my-header">
+      <div class="div-header">
+        <h1 class="title-header">Fundamentos da Linguagem C</h1>
+        <h2 class="sub-title-header">Cristian Pessotto</h2>
+      </div>
+      <nav class="nav-bar">
+        <a
+          class="link-github"
+          href="https://github.com/QravaTTacker"
+          rel="external"
+          target="_blank"
+          ><strong>GitHub</strong>
+        </a>
+        <a
+          class="link-instagram"
+          href="https://www.instagram.com/qravattacker"
+          rel="external"
+          target="_blank"
+          ><strong>Instagram</strong>
+        </a>
+        <a
+          class="link-linkedin"
+          href="https://www.linkedin.com/in/cristian-pessotto-351426255/"
+          rel="external"
+          target="_blank"
+          ><strong>LinkedIn</strong>
+        </a>
+        <a
+          class="link-lattes"
+          href="http://lattes.cnpq.br/4809021965699444"
+          rel="external"
+          target="_blank"
+          ><strong>Lattes</strong>
+        </a>
+      </nav>
+    </header>
+
+    <!--! Corpo Principal do Site -->
+    <main class="my-main">
+      <!--* Seção do Carousel -->
+      <section>
+        <div class="container">
+          <h2 class="title-carousel">Visão Geral</h2>
+          <p class="intro">
+            A linguagem de programação C foi criada por
+            <strong>Dennis Ritchie</strong> em 1972. É uma linguagem de
+            programação versátil para sistemas inteligentes. Além de possuir uma
+            tipagem forte e estática, é uma
+            <strong> linguagem procedural </strong> com nível de abstração
+            intermediário, ou seja, não é orientada a objetos e possui recursos
+            mais próximos ao hardware.
+          </p>
+        </div>
+        <div class="style-carousel container text-center">
+          <!-- Cria um carousel -->
+          <div class="carousel slide" data-bs-ride="carousel">
+            <!-- Cria o ambiente para envolver as imagens no carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img
+                  class="d-block w-100"
+                  src="img/codeC1.png"
+                  alt="Código fonte"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  class="d-block w-100"
+                  src="img/codeC2.png"
+                  alt="Depuração"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img
+                  class="d-block w-100"
+                  src="img/codeC3.png"
+                  alt="Terminal de execução"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Seção dos Cards -->
+      <section class="section-cards">
+        <h2 class="title-cards">Conteúdos de Discussão</h2>
+        <div class="div-cards">
+          <!-- Criação de um container -->
+          <div class="container text-center">
+            <!-- Criação de linhas e colunas -->
+            <div class="row">
+              <div class="col style-col">
+                <a class="topic" href="#saida">Saída</a>
+              </div>
+              <div class="col style-col">
+                <a class="topic" href="#tipos">Tipos</a>
+              </div>
+              <div class="col style-col">
+                <a class="topic" href="#entrada">Entrada</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col style-col">
+                <a class="topic" href="#operadores">Operações</a>
+              </div>
+              <div class="col style-col">
+                <a class="topic" href="#desvios">Desvios</a>
+              </div>
+              <div class="col style-col">
+                <a class="topic" href="#ciclos">Ciclos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Seção dos Conteúdos -->
+      <section>
+        <div class="container text-center">
+          <div id="saida" class="row">
+            <h3 class="title">Hello World</h3>
+            <p class="text">
+              Toda linguagem de programação possui funções ou comandos nativos
+              responsáveis por auxiliar o desenvolvedor na criação de suas
+              aplicações.<br />
+              As primeiras funções, e mais básicas, são aquelas que nos permite
+              mostrar informações. Em C, temos várias, mas as funções principais
+              sãos
+              <span class="pele">printf</span> e <span class="pele">puts</span>.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos">
+<span class="pele">#include</span> <span class="verde">&lt;stdio.h&gt;</span>
+<span class="azul">int</span> <span class="pele">main</span><span class="amarelo">(</span><span class="azul">void</span><span class="amarelo">)</span>
+<span class="amarelo">{</span>
+    <span class="pele">puts</span><span class="roxo">(</span><span class="verde">"Hello, World!"</span><span class="roxo">)</span>;
+    <span class="azul">return</span> <span class="verde">0</span>;
+<span class="amarelo">}</span></pre>
+            </div>
+            <p class="text">
+              O algoritmo acima possui uma função principal chamada
+              <span class="pele">main</span> responsável por executar o nosso
+              programa. Ela tem um valor de retorno indicado pelo
+              <span class="azul">int</span> em sua assinatura, por convenção,
+              sempre será zero (por isso o comando
+              <span class="azul">return</span> <span class="verde">0</span>).
+              Além disso, nossa função não receberá parâmetros devido ao
+              <span class="azul">void</span>.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos main">
+<span class="azul">int</span> <span class="pele">main</span><span class="amarelo
+">(</span><span class="azul">void</span><span class="amarelo
+">)</span></pre>
+            </div>
+            <p class="text">
+              <strong>Parâmetro:</strong> É uma ou mais informações passadas
+              para a função. Com elas, a função pode fazer algum tipo de
+              processamento e retornar um resultado.
+            </p>
+            <p class="text">
+              <strong>Retorno:</strong> É um resultado gerado através do
+              processamento das informações passadas por parâmetros.
+            </p>
+            <p class="text" style="margin: 20px 0px 0px 0px">
+              Outro comando que pode ficar na duvida é a diretiva de
+              pré-processamento
+              <span class="pele">#include </span
+              ><span class="verde">&lt;stdio.h&gt;</span>. Ela é apenas um
+              cabeçalho com um monte de assinaturas de funções internas da
+              linguagem C. É por meio desse comando que "chamamos" as funções
+              input e output, ou seja, funções de entrada e saída de dados.
+            </p>
+            <p class="text" style="margin: 10px 0px 0px 0px">
+              Abaixo, temos por fim, a instrução responsável por mostrar uma
+              mensagem no terminal:
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos sys-io">
+<span class="pele">puts</span><span class="roxo">(</span><span class="verde">"Hello, World!"</span><span class="roxo">)</span></pre>
+            </div>
+            <p class="text">
+              Outra forma de mostrar mensagens no terminal seria:
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos sys-io">
+<span class="pele">printf</span><span class="roxo">(</span><span class="verde">"Hello, World!"</span><span class="roxo">)</span></pre>
+            </div>
+            <p class="text">
+              A diferença entre <span class="pele">puts</span> e
+              <span class="pele">printf</span>, é que a primeira só mostra
+              mensagens definidas, enquanto a segunda nos permite formatar os
+              dados antes de serem exibidos. Algumas formatações incluem a
+              interpolação com espaçamentos, precisão de valor, alinhamento de
+              texto, maior controle de escapes e exibições explicitas com flags.
+            </p>
+          </div>
+          <div id="tipos" class="row">
+            <h3 class="title">Tipificando as Informações</h3>
+            <p class="text">
+              Toda informação, quando bem tratada, possui uma classificação
+              conforme o conjunto de características ou comportamentos que a ele
+              possui, por exemplo, com números, conseguimos fazer operações
+              aritméticas, mas com letras ou frases, não. Esse é um dos motivos
+              que sustentam o fato de haver tipos primitivos nas linguagens de
+              programação. Em C, há três tipos principais:
+            </p>
+            <ul
+              style="margin: 10px 0px 10px 0px; padding-left: 30px"
+              type="none"
+              class="text"
+            >
+              <li>
+                <span class="azul">int</span>: Para armazenar números inteiros.
+              </li>
+              <li>
+                <span class="azul">float</span>: Para armazenar números reais.
+              </li>
+              <li>
+                <span class="azul">char</span>: Para armazenar caracteres
+                únicos.
+              </li>
+            </ul>
+            <p class="text">
+              Para armazenar e manipular informações devemos criar variáveis
+              precedidas pelos tipos primitivos. Sua sintaxe é relativamente
+              simples, só devemos color o tipo de dado, um nome para a variável
+              e a informação que ela recebe.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos type">
+<span class="azul">int</span> idade = <span class="verde">20</span>;
+<span class="azul">float</span> dinheiro = <span class="verde">12.34</span><span class="azul">f</span>;
+<span class="azul">char</span> sinal = <span class="verde">'$'</span>;
+</pre>
+            </div>
+            <p class="text">
+              Para mostras esses dados com as funções de saída, ficará algo
+              como:
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos type">
+<span class="pele">printf</span><span class="roxo">(</span><span class="verde">"int: %i"</span><span class="roxo">,</span> idade<span class="roxo">)</span>
+<span class="pele">printf</span><span class="roxo">(</span><span class="verde">"float: %f"</span><span class="roxo">,</span> dinheiro<span class="roxo">)</span>
+<span class="pele">printf</span><span class="roxo">(</span><span class="verde">"char: %c"</span><span class="roxo">,</span> sinal<span class="roxo">)</span>
+</pre>
+            </div>
+            <p class="text">
+              Repare que o caractere de formatação
+              <span class="verde">%...</span> é responsável por captar a
+              informação contida na variável e interpolar na mensagem de
+              exibição. Além disso, note que o caractere corresponde ao tipo
+              primitivo da variável.
+            </p>
+          </div>
+          <div id="entrada" class="row">
+            <h3 class="title">Captando Dados</h3>
+            <p class="text">
+              A simples declaração de nossas variáveis e a sua devida
+              inicialização ainda mantêm nosso programa estático, para que os
+              dados mudem a cada execução, devemos usar funções de entrada que
+              irão armazenar dados nas variáveis conforme o que é passado. Na
+              linguagem C, cada tipo primitivo recebe uma função própria, com
+              exceção de <span class="azul">int</span> e
+              <span class="azul">float</span> que são dados numéricos.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos sys-io">
+<span class="pele">scanf</span><span class="roxo">(</span><span class="verde">"%i"</span><span class="roxo">, <span class="azul">&</span></span>idade<span class="roxo">)</span>
+<span class="pele">scanf</span><span class="roxo">(</span><span class="verde">"%f"</span><span class="roxo">, <span class="azul">&</span></span>dinheiro<span class="roxo">)</span>
+sinal = <span class="pele">getchar</span><span class="roxo">()</span>
+</pre>
+            </div>
+            <p class="text">
+              Vale ressaltar que, antes de usar as funções de entrada, é
+              necessário declarar as variáveis.
+            </p>
+            <p class="text" style="margin: 10px 0px opx 0px">
+              A função <span class="pele">scanf</span> recebe um dado formatado
+              e coloca ele no endereço de uma variável (para acessar o endereço,
+              devemos colocar um <span class="azul">&</span> antes de qualquer
+              identificador). Já a função
+              <span class="pele">getchar</span> permite fazer uma atribuição
+              direta para uma variável.
+            </p>
+          </div>
+          <div id="operadores" class="row">
+            <h3 class="title">Operações</h3>
+            <p class="text">
+              Talvez essa seja a seção mais relevante, pois aqui será abordado
+              manipulações simples entre dados numéricos, caracteres e,
+              inclusive, lógicos.
+            </p>
+            <p class="text" style="margin: 10px 0px 0px 0px">
+              Toda informação pode ser tratada e processada. Valores numéricos,
+              por exemplo, podem submetidos à operações aritméticas. Já os
+              caracteres, podemos fazer verificações como dados lógicos.
+            </p>
+            <div class="div-table">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th>Tipo</th>
+                    <th>Operação</th>
+                    <th>Exemplo</th>
+                  </tr>
+                  <tr>
+                    <th rowspan="7">
+                      Números <br />
+                      #include &lt;math.h&gt;
+                    </th>
+                    <td>
+                      <span class="pele">abs</span><span class="roxo">(</span
+                      ><span class="azul">int</span><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">abs</span><span class="roxo">(</span
+                      ><span class="verde">-5</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">5</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">fabs</span><span class="roxo">(</span
+                      ><span class="azul">double</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">fabs</span><span class="roxo">(</span
+                      ><span class="verde">-5.7</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">5.7</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">ceil</span><span class="roxo">(</span
+                      ><span class="azul">double</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">ceil</span><span class="roxo">(</span
+                      ><span class="verde">5.5</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">6.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">floor</span><span class="roxo">(</span
+                      ><span class="azul">double</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">floor</span><span class="roxo">(</span
+                      ><span class="verde">5.5</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">5.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">sqrt</span><span class="roxo">(</span
+                      ><span class="azul">double</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">sqrt</span><span class="roxo">(</span
+                      ><span class="verde">49.0</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">7.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">pow</span><span class="roxo">(</span
+                      ><span class="azul">double</span
+                      ><span class="roxo">,</span>
+                      <span class="azul">double</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">pow</span><span class="roxo">(</span
+                      ><span class="verde">2.0</span
+                      ><span class="roxo">,</span> <span class="verde">5.0</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">32.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">fmod</span><span class="roxo">(</span
+                      ><span class="azul">double</span
+                      ><span class="roxo">,</span>
+                      <span class="azul">double</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">fmod</span><span class="roxo">(</span
+                      ><span class="verde">5.0</span
+                      ><span class="roxo">,</span> <span class="verde">2.0</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">1.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="7">
+                      Caracteres <br />
+                      #include &lt;ctype.h&gt;
+                    </th>
+                    <td>
+                      <span class="pele">isdigit</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">isdigit</span
+                      ><span class="roxo">(</span><span class="verde">'A'</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">isalpha</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">isalpha</span
+                      ><span class="roxo">(</span><span class="verde">'A'</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">isalnum</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">isalnum</span
+                      ><span class="roxo">(</span><span class="verde">'8'</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">4</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">isspace</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">isspace</span
+                      ><span class="roxo">(</span><span class="verde">' '</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">8</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">ispunct</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">ispunct</span
+                      ><span class="roxo">(</span><span class="verde">'!'</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">16</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">toupper</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">toupper</span
+                      ><span class="roxo">(</span><span class="verde">'x'</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">'X'</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="pele">tolower</span
+                      ><span class="roxo">(</span><span class="azul">int</span
+                      ><span class="roxo">)</span>
+                    </td>
+                    <td>
+                      <span class="pele">tolower</span
+                      ><span class="roxo">(</span><span class="verde">'X'</span
+                      ><span class="roxo">)</span> =
+                      <span class="verde">'x'</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text">
+              As funções para o tratamento de caracteres sempre irão retornar um
+              valor igual a 0 se a condição for falsa, caso contrário, o retorno
+              será um valor positivo, geralmente representado por uma potência
+              na base 2.
+            </p>
+            <p class="text" style="margin: 10px 0px 0px 0px">
+              Em programação, o valor 0 pode ser interpretado como falso e 1
+              como verdadeiro, ou seja, uma função sempre retornará um valor
+              diferente de 0 para indicar verdadeiro o resultado do
+              processamento.
+            </p>
+            <p class="text" style="margin: 10px 0px 0px 0px">
+              Pelo exemplo acima, é necessário entender outro tipo primitivo,
+              nesse caso, são as <strong>proposições lógicas</strong>. Em geral,
+              há apenas dois resultados para uma proposição: verdadeiro (<span
+                class="verde"
+                >TRUE</span
+              >) ou falso (<span class="verde">FALSE</span>), além disso, uma
+              proposição pode ser submetida por um processamento através dos
+              operadores lógicos, eles são úteis para englobar mais de uma
+              condição, deixando nosso algoritmo cada vez mais completo e
+              próximo da realidade.
+            </p>
+            <p class="text" style="margin: 10px 0px 5px 0px">
+              Em C, não há o tipo lógico, mas algumas API's, como a do Windows,
+              por exemplo, nos permite usar definições para trabalhar com dados
+              lógicos, no entanto, estaremos trabalhando com valores numéricos
+              de qualquer jeito, sem contar que podemos nós mesmos definir
+              diretivas de pré-processamento para "criar" esse tipo de dado. A
+              declaração desses dados lógicos com a API do Windows ficará algo
+              como:
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos sys-io">
+<span class="azul-claro">BOOL</span> F = <span class="pele">FALSE</span>;
+<span class="azul-claro">BOOL</span> T = <span class="pele">TRUE</span>;
+</pre>
+            </div>
+            <p class="text">
+              Como mencionado anteriormente, enquanto ao tratamento desso tipo
+              primitivo, possuímos três operadores principais:
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos sys-io">
+<span class="azul">!</span><span class="pele">TRUE</span> = <span class="verde">FALSE</span>
+<span class="azul">!</span><span class="pele">FALSE</span> = <span class="verde">TRUE</span>
+
+<span class="pele">TRUE</span> <span class="azul">&&</span> <span class="pele">TRUE</span> = <span class="verde">TRUE</span>
+<span class="pele">TRUE</span> <span class="azul">&&</span> <span class="pele">FALSE</span> = <span class="verde">FALSE</span>
+<span class="pele">FALSE</span> <span class="azul">&&</span> <span class="pele">TRUE</span> = <span class="verde">FALSE</span>
+<span class="pele">FALSE</span> <span class="azul">&&</span> <span class="pele">FALSE</span> = <span class="verde">FALSE</span>
+
+<span class="pele">TRUE</span> <span class="azul">||</span> <span class="pele">TRUE</span> = <span class="verde">TRUE</span>
+<span class="pele">TRUE</span> <span class="azul">||</span> <span class="pele">FALSE</span> = <span class="verde">TRUE</span>
+<span class="pele">FALSE</span> <span class="azul">||</span> <span class="pele">TRUE</span> = <span class="verde">TRUE</span>
+<span class="pele">FALSE</span> <span class="azul">||</span> <span class="pele">FALSE</span> = <span class="verde">FALSE</span>
+</pre>
+            </div>
+            <p class="text">
+              Repare que o operador de negação (<span class="azul">!</span>) é
+              unário, isto é, que depende apenas de um único operando, já os
+              operadores de conjunção (<span class="azul">&&</span>) e disjunção
+              inclusiva (<span class="azul">||</span>) dependem de duas
+              proposições, ou seja, são operadores binários. Enquanto aos
+              resultados desses operadores, podemos afirmar que a negação apenas
+              troca o valor da proposição ao seu oposto. Já a conjunção, sempre
+              retornará verdadeiro se ambas as proposições forem verdadeiras,
+              para que isso se repita na disjunção inclusiva, basta uma das
+              proposições ser verdadeira para que o resultado seja verdadeiro.
+            </p>
+          </div>
+          <div id="desvios" class="row">
+            <h3 class="title">Tomadas de Decisão</h3>
+            <p class="text">
+              Os comandos até então discutidos, criam, restritamente, uma
+              programação linear, no entanto, haverá casos que nosso algoritmo
+              deve ser capaz de decidir ações conforme uma operação ou entrada
+              de dados. Por exemplo, a criação de uma simples aplicação para
+              calcular a média de um aluno e mostrar se ele é aprovado ou não,
+              dependerá da sua nota, se para passar de ano ele deve ter 7.0
+              pontos ou mais, o nosso programa mostrará uma mensagem dizendo que
+              ele foi aprovado caso tenha atingido a média, senão, a mensagem
+              informará que ele está em recuperação ou reprovado. Para que esse
+              tipo de comportamento seja realizado pelo programa, devemos usar
+              estruturas de decisão.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos">
+<span class="azul">if</span> <span class="roxo">(</span>nota<span class="azul"> >= </span>media<span class="roxo">) {</span>
+  <span class="pele">puts</span><span class="roxo">(</span><span class="verde
+  ">"Aprovado"</span><span class="roxo">)</span>;
+<span class="roxo">}</span> <span class="azul">else</span> <span class="roxo">{</span>
+  <span class="pele">puts</span><span class="roxo">(</span><span class="verde
+  ">"Reprovado"</span><span class="roxo">)</span>;
+<span class="roxo">}</span>
+</pre>
+            </div>
+            <p class="text">
+              Se a condição do comando <span class="azul">if</span> for
+              verdadeira, será mostrado "Aprovado", caso contrário, o bloco de
+              instruções do comando <span class="azul">else</span> será
+              executado. Agora, imagine se o aluno tirou entre a 6.9 e 5.0, isso
+              permitiria que colocássemos uma segunda condição para indicar que
+              ele pode fazer uma prova substitutiva. Para isso, devemos aninhar
+              uma segunda condição do tipo <span class="azul">else if</span>,
+              assim permitindo um terceiro comportamento do nosso programa.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos largo">
+<span class="azul">if</span> <span class="roxo">(</span>nota<span class="azul"> >= </span>media<span class="roxo">) {</span>
+  <span class="pele">puts</span><span class="roxo">(</span><span class="verde
+  ">"Aprovado"</span><span class="roxo">)</span>;
+<span class="roxo">}</span> <span class="azul">else if</span> <span class="roxo">(</span>nota<span class="azul"> &lt; </span>media<span class="azul"> && </span>nota<span class="azul"> >= </span><span class="verde">5.0</span><span class="roxo">) {</span>
+  <span class="pele">puts</span><span class="roxo">(</span><span class="verde
+  ">"Fazer Substitutiva!"</span><span class="roxo">)</span>;
+<span class="roxo">}</span> <span class="azul">else</span> <span class="roxo">{</span>
+  <span class="pele">puts</span><span class="roxo">(</span><span class="verde
+  ">"Reprovado"</span><span class="roxo">)</span>;
+<span class="roxo">}</span>
+</pre>
+            </div>
+            <p class="text">
+              Apesar de ser dispensável o seu uso em verificações simples como
+              acima, o operador lógico de conjunção foi útil para verificar se a
+              nota esta abaixo da média e é maior ou igual que 5.0 pontos. Caso
+              uma das condições seja falsa, o programa irá executar o bloco do
+              comando <span class="azul">else</span>.
+            </p>
+          </div>
+          <div id="ciclos" class="row">
+            <h3 class="title">Ciclos</h3>
+            <p class="text">
+              Haverá momentos que seremos obrigados a repetir determinados
+              comandos. Imagine que queremos mostrar todos os múltiplos de 7
+              entre 0 e 100. Para tarefas desse gênero, devemos usar um ciclo
+              irá repetir constantemente instruções pré-definidas, nesse caso,
+              mostrar todos os múltiplos de 7 entra o intervalo de 0 e 100.
+            </p>
+            <p class="text" style="margin: 10px 0px 5px 0px">
+              Toda estrutura de repetição (ciclo), deve ter um valor de partida
+              (<strong>variável de controle</strong>), valor de chegada (<strong
+                >condição de parada</strong
+              >) para interromper o ciclo e um incremento para saltar de um
+              valor até o outro, fazendo com que a condição de parada seja
+              alcançada em algum momento.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos for-centro">
+<span class="azul">for </span><span class="roxo">(</span><span class="azul">int</span> cont = <span class="verde">0</span>; cont<span class="azul"> <= </span><span class="verde">100</span>; cont<span class="azul">++</span><span class="roxo">)</span>
+</pre>
+            </div>
+            <p class="text">
+              Repare que a variável <span class="azul">cont</span> é nosso
+              contador que vai de 0 até 100. Para mostrar apenas os múltiplos de
+              7, devemos colocar em desvio condicional que mostrará apenas esse
+              valores.
+            </p>
+            <p class="text" style="margin: 10px 0px 5px 0px">
+              Todo múltiplo de 7 quando divido pelo mesmo valor, terá o resto da
+              divisão igual a 0. Por exemplo, quando dividimos 14 por 7 o
+              resultado será 2 e o módulo 0. Agora se dividimos 15 por 7 o
+              resultado será 2,14 e o módulo 1, ou seja, verdadeiro na
+              programação. Na realidade, qualquer número diferente de zero é
+              verdadeiro.
+            </p>
+            <p class="text" style="margin: 10px 0px 5px 0px">
+              Concluímos que: todo número quando não for divisível por 7 irá
+              retornar um valor qualquer diferente de 0, esse valor qualquer é
+              interpretado como verdadeiro em uma condição, mas como queremos
+              apenas os valores que são múltiplos, isto é, que possuem o módulo
+              igual a 0 (falso em uma condição), podemos fazer uma inversão
+              desse valor lógico.
+            </p>
+            <div class="div-exemplos">
+              <pre class="exemplos largo">
+<span class="azul">for </span><span class="roxo">(</span><span class="azul">int</span> cont = <span class="verde">0</span>; cont<span class="azul"> <= </span><span class="verde">100</span>; cont<span class="azul">++</span><span class="roxo">)</span>
+<span class="roxo">{</span>
+    <span class="azul">if</span> <span class="roxo">(</span><span class="azul">!</span><span class="pele">fmod</span><span class="amarelo">(</span>cont, <span class="verde">7</span><span class="amarelo">)</span><span class="roxo">)</span>
+    <span class="roxo">{</span>
+        <span class="pele">printf</span><span class="roxo">(</span><span class="verde">"%i\n"</span>, cont<span class="roxo">)</span>;
+    <span class="roxo">}</span>
+<span class="roxo">}</span>
+</pre>
+            </div>
+            <p class="text">
+              Desse modo, concluímos a proposta do exemplo mencionado
+              anteriormente. Vale ressaltar que o uso de ciclos é algo
+              extremamente importante quando queremos automatizar algumas
+              tarefas simples.
+            </p>
+
+            <p class="text" style="margin: 10px 0px 5px 0px">
+              Agora, fica uma sugestão de prática, busque fazer alguns
+              exercícios da plataforma
+              <a
+                class="link-info"
+                href="https://www.beecrowd.com.br/judge/en/login"
+                target="_blank"
+                >Beecrowd</a
+              >!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--! Rodapé do Site -->
+    <footer class="my-footer">
+      <p class="text-footer">
+        Faculdade Municipal de Educação e Meio Ambiente - FAMA <br />
+        Município de Clevelândia (2023)<br />
+        <em>Cristian Pessotto</em> &copy;
+      </p>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

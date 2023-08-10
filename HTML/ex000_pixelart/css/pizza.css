@@ -1,0 +1,58 @@
+.pizza{
+    background-color: #f1660f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.th-pizza{
+    background-color: #f1660f;
+    width: 17px;
+    height: 17px;
+    padding: 0px;
+}
+
+.borda{
+    opacity: 80%;
+    background-color: #2c2a2c; 
+    width: 17px;
+    height: 17px;
+}
+
+.massa{
+    background-color: #ffd700;
+    width: 17px;
+    height: 17px;
+}
+
+.borda-massa1{
+    background-color: #8b4412;
+    width: 17px;
+    height: 17px;
+}
+
+.borda-massa2{
+    background-color: #cd853e;
+    width: 17px;
+    height: 17px;
+}
+
+.calabresa{
+    background-color: #ff0000;
+    width: 17px;
+    height: 17px;
+}
+
+.borda-calabresa{
+    background-color: #700024;
+    width: 17px;
+    height: 17px;
+}
+
+.recheio{
+    background-color: #ff9124;
+    width: 17px;
+    height: 17px;
+}

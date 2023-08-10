@@ -1,0 +1,13 @@
+body {
+    background-image: linear-gradient(to right, #5f9ea0, #315253);
+}
+
+@keyframes gradient {
+    from {
+        background-image: linear-gradient(110deg, #784d22, #dc7952);
+    }
+
+    to {
+        background-image: linear-gradient(210deg, #784d22, #dc7952);
+    }
+}

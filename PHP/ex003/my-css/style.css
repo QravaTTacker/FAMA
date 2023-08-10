@@ -1,0 +1,90 @@
+/* ESTILOS GERAIS */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #242729;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #114131;
+  border-radius: 10px;
+}
+
+body {
+  color: #e8e6e3;
+  background-color: #1c1e1f;
+  font-size: 11pt;
+  margin: 5px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 8px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.my-nav {
+  background-color: #242729 !important;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.my-nav-text {
+  color: #a277ff;
+  font-size: 20pt;
+  font-weight: bolder;
+}
+
+.my-text-min {
+  color: #f694ff;
+  font-size: 8pt;
+}
+
+/* ESTILOS DAS SEÇÕES */
+.my-section {
+  margin-bottom: 25px;
+}
+
+/* PARÁGRAFOS E TÍTULOS DA SEGUNDA SEÇÃO */
+.title {
+  color: #61ffca;
+}
+
+.my-text {
+  text-align: justify;
+}
+
+/* COMPONENTES DO FORMULÁRIO */
+.my-label {
+  font-style: italic;
+  font-weight: bolder;
+  display: block;
+}
+
+.my-input {
+  background-color: #3b3b3b;
+  border: 1px solid #515050;
+  color: #e8e6e3;
+  height: 40px;
+  width: 80%;
+}
+
+.my-input-submit {
+  background-color: #4b2b4d;
+  border: 1px solid #515050;
+  color: #e8e6e3;
+  height: 40px;
+}
+
+/* COMPORTAMENTOS RESPONSIVOS */
+@media screen and (max-width: 540px) {
+  .my-text-min {
+    display: block;
+  }
+}
