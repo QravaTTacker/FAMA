@@ -440,8 +440,8 @@ janela['bg'] = '#202020'
 janela['bd'] = 5
 janela['relief'] = 'solid'
 janela.resizable(False, False)
-janela.iconbitmap(r'C:\Users\QravaTTacker\OneDrive\Documentos\MyDocs\Estudos\Faculdades\FAMA\Codes\Python\Tkinter\icon\geo.ico')
-img = ImageTk.PhotoImage(Image.open(r'C:\Users\QravaTTacker\OneDrive\Documentos\MyDocs\Estudos\Faculdades\FAMA\Codes\Python\Tkinter\img\star.jpg'))
+janela.iconbitmap(r'Python\tkinter\icon\geo.ico')
+img = ImageTk.PhotoImage(Image.open(r'Python\tkinter\img\star.jpg'))
 # ---------------------------------------------------------------------> Centraliza a janela no vídeo
 largura = 575
 altura = 420
