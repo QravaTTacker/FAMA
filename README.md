@@ -5,7 +5,7 @@
       </a>
       <a href="#intro" title=" ">
             <img alt=": Press F5"
-            src="https://readme-typing-svg.demolab.com?font=Tektur&weight=600&size=25&duration=3000&pause=500&color=61FFCA&center=true&width=435&lines=C;Python;Java;PHP;HTML+CSS"/>
+            src="https://readme-typing-svg.demolab.com?font=Tektur&weight=600&size=25&duration=3000&pause=500&color=61FFCA&center=true&width=435&lines=Linguagem+C;Python;Java;PHP;HTML+%2B+CSS"/>
       </a>
 </div>
 
