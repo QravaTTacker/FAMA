@@ -19,7 +19,7 @@ git clone https://github.com/QravaTTacker/fama.git
 <div align="center">
   <br/>
   <a href="#intro">
-    <img alt="Repositório para algoritmos desenvolvidos da FAMA" title="Algoritmos desenvolvidos da FAMA" width="80%"
+    <img alt="Repositório para algoritmos desenvolvidos da FAMA" title="Algoritmos desenvolvidos da FAMA" width="95%"
       src="assets/rep-fama.png"/>
     <br/>
   </a>
