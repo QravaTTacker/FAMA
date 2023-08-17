@@ -11,7 +11,7 @@
 
 <div align="center">
 
-```shell
+```bash
 git clone https://github.com/QravaTTacker/fama.git
 ```
 
