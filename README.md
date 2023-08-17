@@ -66,7 +66,7 @@ echo Hello::$mgs . "\n";
 
 <!-- php main.php -->
 
-## PHP
+## HTML + CSS
 
 ```html
 <!DOCTYPE html>
