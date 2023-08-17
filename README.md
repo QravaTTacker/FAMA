@@ -16,10 +16,15 @@ git clone https://github.com/QravaTTacker/fama.git
 ```
 
 </div>
+<div align="center">
+  <img height="600px" alt="Repositório da FAMA" title="Repositório da FAMA" src="assets/rep-fama.png"/>
+  <br/>
+  <br/>
+</div>
 <details>
-<summary><em><strong>Diretórios</strong></em></summary>
+<summary><em><strong>Diretórios 📂</strong></em></summary>
 
-```java
+```
 fama
 ├───C
 │   ├───output
