@@ -17,6 +17,7 @@ git clone https://github.com/QravaTTacker/fama.git
 
 </div>
 <div align="center">
+  <br/>
   <img width="800" alt="Repositório da FAMA" title="Repositório da FAMA" src="assets/rep-fama.png"/>
   <br/>
   <br/>
