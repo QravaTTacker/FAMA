@@ -1,2 +1,5 @@
 # Binários gerados em C
 C/output/
+
+# Configs da workspace
+.vscode/
