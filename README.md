@@ -9,6 +9,14 @@
       </a>
 </div>
 
+<div align="center">
+
+```shell
+git clone https://github.com/QravaTTacker/fama.git
+```
+
+</div>
+
 ## C
 
 ```C
