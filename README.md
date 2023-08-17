@@ -1,11 +1,11 @@
 <div id="intro" align="center">
       <a href="#intro" title=" ">
             <img alt="Capsule Render" width="100%"
-            src="https://capsule-render.vercel.app/api?type=waving&fontColor=c778cf&color=40:622d6a,100:51cf98&height=120&section=header&text=Faculdade+Municiapl+de+Meio+Ambiente&fontSize=40&animation=fadeIn"/>
+            src="https://capsule-render.vercel.app/api?type=waving&fontColor=c778cf&color=40:622d6a,100:51cf98&height=80&section=header&text=Faculdade+Municiapl+de+Meio+Ambiente&fontSize=40&animation=fadeIn"/>
       </a>
       <a href="#intro" title=" ">
             <img alt=": Press F5"
-            src="https://readme-typing-svg.demolab.com?font=Tektur&weight=600&size=20&duration=4000&pause=500&color=61FFCA&center=true&width=435&lines=C+language;Python;Java;PHP"/>
+            src="https://readme-typing-svg.demolab.com?font=Tektur&weight=600&size=25&duration=3000&pause=500&color=61FFCA&center=true&width=435&lines=C;Python;Java;PHP;HTML+CSS"/>
       </a>
 </div>
 
@@ -66,3 +66,37 @@ echo Hello::$mgs . "\n";
 ```
 
 <!-- php main.php -->
+
+## PHP
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <style>
+      body {
+        background-color: #15141b;
+        color: #ccffcc;
+        font-size: 30px;
+      }
+      section.my-sec {
+        display: flex;
+        justify-content: center;
+      }
+      span.gree {
+        color: #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="my-sec">
+        <p>Hello, <span class="gree">FAMA!</span></p>
+      </section>
+    </main>
+  </body>
+</html>
+```
