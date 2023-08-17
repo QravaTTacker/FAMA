@@ -28,7 +28,7 @@ public class Tree<T extends Comparable<T>> {
     @SafeVarargs
     public Tree(final T... args) {
         this.root = new No<>(args[0]);
-        this.values = new ArrayList<>(Arrays.asList(args));
+        this.values = new ArrayList<>();
         for (int i = 0; i < args.length; i++) {
             this.insert(args[i]);
         }

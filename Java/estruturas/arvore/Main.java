@@ -8,10 +8,10 @@ public class Main {
 
         Tree<Integer> treeInt = new Tree<>(3);
         Tree<String> treeStr = new Tree<>();
-        Tree<Double> treeFlt = new Tree<>(2.3, 5.1, 5D, 3.4, 2D);
+        Tree<Double> treeFlt = new Tree<>(2.3, 5D, 3.4, 2D);
 
         System.out.println(treeInt);
-        System.out.println(treeFlt);
         System.out.println(treeStr);
+        System.out.println(treeFlt);
     }
 }
