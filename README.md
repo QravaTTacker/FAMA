@@ -11,7 +11,7 @@
 
 <div align="center">
 
-```bash
+```c
 git clone https://github.com/QravaTTacker/fama.git
 ```
 
@@ -107,3 +107,5 @@ echo Hello::$mgs . "\n";
   </body>
 </html>
 ```
+
+<!-- .\index.php -->
