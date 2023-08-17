@@ -16,6 +16,119 @@ git clone https://github.com/QravaTTacker/fama.git
 ```
 
 </div>
+<details>
+<summary><em><strong>Diretórios</strong></em></summary>
+
+```java
+fama
+├───C
+│   ├───output
+│   └───tests
+├───HTML
+│   ├───ex000_pixelart
+│   │   ├───css
+│   │   └───img
+│   ├───ex001_loading
+│   │   └───css
+│   ├───ex002_atividade
+│   │   ├───.vscode
+│   │   ├───bootstrap
+│   │   │   ├───css
+│   │   │   └───js
+│   │   ├───codes
+│   │   ├───icons
+│   │   ├───img
+│   │   └───my-css
+│   └───tests
+│       └───links
+│           ├───css
+│           ├───icon
+│           └───img
+├───Java
+│   ├───atividades
+│   │   └───prova1
+│   ├───estruturas
+│   │   ├───arvore
+│   │   │   └───my_tree
+│   │   ├───fila
+│   │   │   └───ex000
+│   │   ├───lista
+│   │   │   ├───dupla
+│   │   │   └───simples
+│   │   │       ├───ex000
+│   │   │       ├───ex001
+│   │   │       └───ex002
+│   │   ├───pilha
+│   │   │   └───ex000
+│   │   ├───sort
+│   │   │   ├───bubble
+│   │   │   ├───insertion
+│   │   │   ├───merge
+│   │   │   ├───quick
+│   │   │   ├───radix
+│   │   │   ├───selection
+│   │   │   └───shell
+│   │   └───vetor
+│   │       └───ex001
+│   ├───labs
+│   ├───oop
+│   │   ├───bola
+│   │   ├───calcular
+│   │   │   ├───exemplos
+│   │   │   └───expression
+│   │   │       ├───operadores
+│   │   │       └───operandos
+│   │   ├───circulo
+│   │   ├───circulo_gui
+│   │   ├───conta
+│   │   ├───conta_corrente
+│   │   ├───fibonacci
+│   │   ├───pessoa
+│   │   ├───pessoa2
+│   │   ├───produto
+│   │   ├───quadrado
+│   │   ├───retangulo
+│   │   ├───revision
+│   │   ├───tamagushi
+│   │   ├───televisor
+│   │   └───veiculo
+│   └───projects
+│       ├───ip
+│       └───swing
+├───PHP
+│   ├───ex000
+│   ├───ex001
+│   ├───ex002
+│   ├───ex003
+│   │   ├───bootstrap
+│   │   │   ├───css
+│   │   │   └───js
+│   │   ├───icons
+│   │   └───my-css
+│   ├───ex004
+│   ├───ex005
+│   │   └───classes
+│   ├───ex006
+│   ├───ex007
+│   │   └───classes
+│   │       └───contas
+│   ├───ex008
+│   │   ├───src
+│   │   └───vendor
+│   │       └───composer
+│   └───tests
+└───Python
+    ├───lib
+    │   └───__pycache__
+    ├───tests
+    │   └───lib
+    │       └───__pycache__
+    └───tkinter
+        ├───icon
+        └───img
+```
+
+</details>
 
 ## C
 
@@ -93,7 +206,7 @@ echo Hello::$mgs . "\n";
         display: flex;
         justify-content: center;
       }
-      span.gree {
+      span.green {
         color: #00ff00;
       }
     </style>
@@ -101,7 +214,7 @@ echo Hello::$mgs . "\n";
   <body>
     <main>
       <section class="my-sec">
-        <p>Hello, <span class="gree">FAMA!</span></p>
+        <p>Hello, <span class="green">FAMA!</span></p>
       </section>
     </main>
   </body>
