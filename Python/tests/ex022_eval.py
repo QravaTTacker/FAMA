@@ -1,4 +1,4 @@
-from math import *
+from math import cos, radians
 
 try:
     equ = eval('cos(radians(180))')
