@@ -20,7 +20,6 @@ int main(void)
     fputs("Hello, FAMA!\n", stdout);
     return EXIT_SUCCESS;
 }
-
 ```
 
 <!-- gcc -Wall -Wextra -Werror - pedantic main.c -o main.exe -->
