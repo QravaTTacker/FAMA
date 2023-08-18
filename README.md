@@ -16,6 +16,14 @@ git clone https://github.com/QravaTTacker/fama.git
 ```
 
 </div>
+
+<details align="center">
+  <summary align="left">
+    Se não tiver o git instalado...
+  </summary><br/>
+  <code><pre>winget install -e -id Git.Git</pre></code>
+</details>
+
 <div align="center">
   <br/>
   <a href="#intro">
@@ -26,7 +34,7 @@ git clone https://github.com/QravaTTacker/fama.git
   <br/>
 </div>
 <details>
-<summary><em><strong>Diretórios 📂</strong></em></summary>
+<summary><em><strong>Diretórios</strong></em> 📂</summary>
 
 ```
 fama
