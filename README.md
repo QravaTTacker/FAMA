@@ -17,7 +17,7 @@ git clone https://github.com/QravaTTacker/fama.git
 
 </div>
 
-<details open align="center">
+<details align="center">
   <summary align="left">
     Se não tiver o git instalado...
   </summary>
