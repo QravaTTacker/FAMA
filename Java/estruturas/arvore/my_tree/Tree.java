@@ -138,9 +138,9 @@ public class Tree<T extends Comparable<T>> {
                 noRemove = null;
             } else { // Possui filho em ambos os lados
                 No<T> sub = noRemove.getLeft();
-                No<T> parentSub = noRemove;
+                // No<T> parentSub = noRemove;
                 while (sub.getRight() != null) {
-                    parentSub = sub;
+                    // parentSub = sub;
                     sub = sub.getRight();
                 }
                 if (sub.getLeft() == null && sub.getRight() == null) { // Sub não possui filhos
