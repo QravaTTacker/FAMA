@@ -1,4 +1,4 @@
-package arvore.my_tree;
+package arvore.ex000.my_tree;
 
 class No<T> {
 

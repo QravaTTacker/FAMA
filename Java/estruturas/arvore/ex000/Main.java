@@ -1,6 +1,6 @@
-package arvore;
+package arvore.ex000;
 
-import arvore.my_tree.Tree;
+import arvore.ex000.my_tree.Tree;
 
 public class Main {
 

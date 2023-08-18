@@ -1,21 +1,9 @@
-package arvore.my_tree;
+package arvore.ex000.my_tree;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Tree<T extends Comparable<T>> {
-
-    class Node {
-        Integer valor;
-
-        public Node(Integer valor) {
-            this.valor = valor;
-        }
-
-        public Integer getValor() {
-            return this.valor;
-        }
-    }
 
     public static final byte INORDER = 0;
     public static final byte PREORDER = 1;
