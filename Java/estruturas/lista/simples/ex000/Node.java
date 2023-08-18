@@ -1,6 +1,6 @@
 package lista.simples.ex000;
 
-public class Node {
+class Node {
 
     private Object value;
     private Node next;

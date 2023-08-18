@@ -1,6 +1,6 @@
 package lista.simples.ex001;
 
-public class Node<T> {
+class Node<T> {
 
     private T element;
     private Node<T> next;

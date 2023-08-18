@@ -1,6 +1,6 @@
 package lista.simples.ex000;
 
-public class Main {
+class Main {
 
     private static final String R = "\033[31;1m";
     private static final String G = "\033[32;1m";
