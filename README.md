@@ -17,11 +17,15 @@ git clone https://github.com/QravaTTacker/fama.git
 
 </div>
 
-<details align="center">
+<details open align="center">
   <summary align="left">
     Se não tiver o git instalado...
-  </summary><br/>
-  <code><pre>winget install -e -id Git.Git</pre></code>
+  </summary>
+
+```shell
+winget install -e -id Git.Git
+```
+
 </details>
 
 <div align="center">
