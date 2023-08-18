@@ -1,9 +1,5 @@
 package arvore;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import arvore.my_tree.Tree;
 
 public class Main {
@@ -17,10 +13,10 @@ public class Main {
 
         // System.out.println(treeInt);
         // System.out.println(treeStr);
-       
+
         treeFlt.show(Tree.INORDER);
         treeFlt.show(Tree.INORDER);
-        
+
         treeFlt.remove(0D);
         treeFlt.show();
 
