@@ -15,8 +15,6 @@ public class Main {
         // Tree<String> treeStr = new Tree<>();
         Tree<Double> treeFlt = new Tree<>(2.3, null, 5D, 3.4, 2D, 2.1, 2D, 3D, 8D, -2D, 0D);
 
-        
-
         // System.out.println(treeInt);
         // System.out.println(treeStr);
        
