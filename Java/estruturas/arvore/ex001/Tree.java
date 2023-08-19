@@ -28,7 +28,7 @@ public final class Tree<T extends Comparable<T>> {
 
     public Tree(final T value) {
         this.insert(value);
-        this.size = 1;
+        this.size = 0;
     }
 
     @SafeVarargs
