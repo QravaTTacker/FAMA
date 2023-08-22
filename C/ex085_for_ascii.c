@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio2.h>
 
 int main()
 {
@@ -11,7 +10,7 @@ int main()
         printf(" Tamanho = ");
         scanf("%d", &num);
         fflush(stdin);
-        textcolor(GREEN);
+        puts("\x1b[31;1m");
         for (int i = 0; i < num; i++)
         {
             for (int j = 0; j < i; j++)
@@ -28,7 +27,7 @@ int main()
                 printf(" $");
             printf("\n");
         }
-        textcolor(WHITE);
+        puts("\x1b[m");
         printf("\nPara? \n S - 1\n N - 0\n >>> ");
         scanf("%i", &resp);
         fflush(stdin);
