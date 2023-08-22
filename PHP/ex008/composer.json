@@ -1,8 +1,8 @@
 {
-  "name": "fama/ex008",
+  "name": "qravattacker/ex008",
   "autoload": {
     "psr-4": {
-      "ex008\\": "src/"
+      "Ex008\\": "src/"
     }
   },
   "authors": [
