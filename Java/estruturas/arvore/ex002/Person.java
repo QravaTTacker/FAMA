@@ -1,3 +1,5 @@
+package arvore.ex002;
+
 public final class Person implements Comparable<Person> {
 
     private String name;

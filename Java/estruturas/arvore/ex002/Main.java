@@ -1,4 +1,6 @@
-import my_modulo.Tree;
+package arvore.ex002;
+
+import arvore.ex002.my_modulo.Tree;
 
 public final class Main {
     public static void main(String[] args) {

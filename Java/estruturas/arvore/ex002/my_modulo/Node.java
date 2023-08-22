@@ -1,4 +1,4 @@
-package my_modulo;
+package arvore.ex002.my_modulo;
 
 final class Node<T> {
 
