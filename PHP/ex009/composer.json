@@ -1,0 +1,15 @@
+{
+  "name": "qravattacker/ex009",
+  "autoload": {
+    "psr-4": {
+      "Ex009\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "QravaTTacker",
+      "email": "cristianpessotto8@gmail.com"
+    }
+  ],
+  "require": {}
+}
