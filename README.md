@@ -23,7 +23,7 @@ git clone https://github.com/QravaTTacker/fama.git
   </summary>
 
 ```shell
-winget install -e -id Git.Git
+winget install -e --id Git.Git
 ```
 
 </details>
