@@ -17,4 +17,5 @@ public class Main {
         System.out.println("-".repeat(10));
         pessoa2.status();
     }
+
 }
