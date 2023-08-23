@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Qravattacker\\Ex009\\' => array($baseDir . '/src'),
+    'Ex009\\' => array($baseDir . '/src'),
 );

@@ -2,7 +2,12 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use Ex009\Views\Home;
+
+$title = Home::render();
+
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -12,11 +17,14 @@ require_once __DIR__ . '/../vendor/autoload.php';
     <meta name="author" content="Cristian Pessotto" />
     <meta name="description" content="Descrição" />
     <meta name="keywords" content="HTML,  CSS,  JS" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="icons/name.png" rel="icon" type="image/png" size="16x16" />
-    <title>My Web Site</title>
-    <script>
-    </script>
+    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+    <!-- <link href="icons/name.png" rel="icon" type="image/png" size="16x16" /> -->
+    <title><?= Home::render() ?></title>
+    <style>
+        body {
+            background-color: #2d2b38;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +34,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
     </header>
     <!--! Conteúdo da Página -->
     <main>
-        <section></section>
+        <section>
+            <?php echo "<h2 style='background-color: #ef5350; display: inline;'>" . home::render() . "</h2>" ?>
+        </section>
         <section></section>
     </main>
     <!--! Rodapé da Página -->
