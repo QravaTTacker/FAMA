@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 final class Main {
 
-    private final static int SIZE = 30;
+    private final static int SIZE = 10;
 
     public static void main(String[] args) {
         System.out.print("\033[2J\033[H");
